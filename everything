@@ -1,3 +1,5 @@
+Wrangling
+
 #df.dropna(subset = [NAME OF COLUMN], axis= 0. inplace = True) gets rid of NaN values
 
 #mean = df[NAME OF COLUMN].mean()
@@ -13,3 +15,19 @@
                           (df[thing].max()) - df[thing].min())
                      
 #zscore df[thing] - (dfthing] - df[thing].mean())/df[thing].std()
+
+
+binning
+#bins = np.linspace(min(df[thing]), max(df[thing]), 4)
+#group_names = ['one', 'two', 'three']
+df[thingbinned] = pd.cut(df[thing], bins, labels = group_names, include_lowest = True)
+
+pd.get_dummies(df[fuel])
+
+
+Exploratory data analysis
+
+Model Development
+
+Model evaluation
+
