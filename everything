@@ -1,0 +1,15 @@
+#df.dropna(subset = [NAME OF COLUMN], axis= 0. inplace = True) gets rid of NaN values
+
+#mean = df[NAME OF COLUMN].mean()
+#df[NAME OF COLUMN].replace(np.nan, mean)
+#df[new column] = 234/df["column to be converted"]
+
+#dataframe.dtypes() to identify data type or.astype to convert data type
+#df["price"] = df["price"].astype("int")
+
+#normalisation methods:
+#1 simple feature df["length"] = df[";ength"]/df[length].max
+#2 minmanx  = df[thing] = (df[thing] - df[thing].min()) / 
+                          (df[thing].max()) - df[thing].min())
+                     
+#zscore df[thing] - (dfthing] - df[thing].mean())/df[thing].std()
