@@ -22,11 +22,35 @@ binning
 #group_names = ['one', 'two', 'three']
 df[thingbinned] = pd.cut(df[thing], bins, labels = group_names, include_lowest = True)
 
-pd.get_dummies(df[fuel])
+#pd.get_dummies(df[fuel])
 
 
 Exploratory data analysis
 
+#df.describe()
+#drive_wheels_counts = df['drive-wheels'].value_counts().to_frame()
+#drive_wheels_counts.rename(columns = {'drive-wheels':'value_counts'), inplace = True)
+
+#sns.boxplot(x = 'drive-wheels', y='price', data=df)
+#y=df['price']
+#x=df['engine-size']
+#plt.scatter(x,y)
+#plt.title('title')
+#plt.xlabel('xlabel')
+#plt.ylabel('ylabel')
+
+#df_test = df[['drive-wheels', 'body-style'.....]]
+#df_grp = df_test.groupby(['drive-wheels', 'body-style'], as_index=False).mean()
+#df_grp
+
+#df_pivolt = df_grp.pivot(index='drive_wheels',columns='body-style')
+
+#plt.polor(df_pivot, cmal='RdBlu')
+#plt.colorbar()
+#plt.show()
+
+#sns.regplot(x='engine-size", y='price', data=df)
+#plt.ylim(0,)
 Model Development
 
 Model evaluation
