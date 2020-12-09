@@ -51,6 +51,14 @@ Exploratory data analysis
 
 #sns.regplot(x='engine-size", y='price', data=df)
 #plt.ylim(0,)
+
+#df_anova=df[[ind, dep]]
+grouped_anova = df_anova.groupvy([ind])
+
+pearson_cel, p_value = stats.pearsonr(df[independent], df[dependent])
+
+
+
 Model Development
 
 Model evaluation
